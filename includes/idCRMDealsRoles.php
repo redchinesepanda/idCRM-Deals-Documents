@@ -33,6 +33,8 @@ class idCRMDealsRoles
 
     public static function add_cap()
     {
+        $roles = [];
+        
         if ( wp_roles()->is_role( 'administrator' ) ) {
             $roles[] = get_role( 'administrator' );
         }
@@ -49,7 +51,7 @@ class idCRMDealsRoles
         
         self::add_cap_deal_status( $roles );
 
-        wp_die( 'idCRMDealsRoles::add_cap' ); 
+        wp_die( 'idCRMDealsRoles::add_cap $roles: ' . print_r( $roles, true ) ); 
     }
 
 }
