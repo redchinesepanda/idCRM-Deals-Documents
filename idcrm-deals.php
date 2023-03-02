@@ -25,8 +25,8 @@ if ( ! defined( 'WPINC' ) ) {
 // require_once('includes/idCRMContactsCompanyCpt.php'); 
 // require_once('includes/idCRMContactsScheduleCpt.php');
 // require_once('includes/idCRMContactsUserCpt.php');
-// require_once('includes/idCRMContactsActivator.php');
-// require_once('includes/idCRMContactsDeactivator.php');
+require_once('includes/idCRMDealsActivator.php');
+require_once('includes/idCRMDealsDeactivator.php');
 // require_once('includes/idCRMContactsMain.php');
 
 // use \idcrm\includes\idCRMContactsMain;
@@ -48,9 +48,9 @@ class idCRMDeals
 
 	public static function register()
 	{
-		register_activation_hook( __FILE__, array('\idcrm\includes\idCRMContactsActivator', 'activate') );
+		register_activation_hook( __FILE__, [ '\idcrmdeals\includes\idCRMDealsActivator', 'activate' ] );
 
-		register_activation_hook( __FILE__, array('\idcrm\includes\idCRMContactsDeactivator', 'deactivate') );
+		register_activation_hook( __FILE__, [ '\idcrmdeals\includes\idCRMDealsDeactivator', 'deactivate' ] );
 
 		// idCRMDealsMain::register();
 	}
