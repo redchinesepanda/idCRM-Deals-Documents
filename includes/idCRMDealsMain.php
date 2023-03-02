@@ -4,7 +4,8 @@ namespace idcrmdeals\includes;
 
 require_once('idCRMDealsTemplate.php');
 
-class idCRMDealsMain {
+class idCRMDealsMain
+{
     public static function register()
     {
         idCRMDealsTemplate::register();

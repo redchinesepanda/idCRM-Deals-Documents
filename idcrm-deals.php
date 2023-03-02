@@ -22,18 +22,20 @@ if ( ! defined( 'WPINC' ) ) {
 	die;
 }
 
-require_once('includes/idCRMDealsMain.php'); 
-// require_once('includes/idCRMContactsScheduleCpt.php');
-// require_once('includes/idCRMContactsUserCpt.php');
-require_once('includes/idCRMDealsActivator.php');
-require_once('includes/idCRMDealsDeactivator.php');
-// require_once('includes/idCRMContactsMain.php');
+require_once('includes/idCRMDealsMain.php');
 
-use \idcrmdeals\includes\idCRMContactsMain;
+require_once('includes/idCRMDealsActivator.php');
+
+require_once('includes/idCRMDealsDeactivator.php');
+
+use \idcrmdeals\includes\idCRMDealsMain;
 
 define( 'IDCRM_DEALS_VERSION', '1.0.0' );
+
 define( 'IDCRM_DEALS_PATH', plugin_dir_path( __FILE__ ) );
+
 define( 'IDCRM_DEALS_URL', plugin_dir_url( __FILE__ ) );
+
 define( 'IDCRM_DEALS_FILE', plugin_basename( __FILE__ ) );
 
 class idCRMDeals
