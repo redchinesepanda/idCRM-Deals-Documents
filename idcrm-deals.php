@@ -22,14 +22,14 @@ if ( ! defined( 'WPINC' ) ) {
 	die;
 }
 
-require_once('includes/idCRMContactsCompanyCpt.php'); 
+// require_once('includes/idCRMContactsCompanyCpt.php'); 
 // require_once('includes/idCRMContactsScheduleCpt.php');
 // require_once('includes/idCRMContactsUserCpt.php');
 // require_once('includes/idCRMContactsActivator.php');
 // require_once('includes/idCRMContactsDeactivator.php');
 // require_once('includes/idCRMContactsMain.php');
 
-use \idcrm\includes\idCRMContactsMain;
+// use \idcrm\includes\idCRMContactsMain;
 
 define( 'IDCRM_DEALS_VERSION', '1.0.0' );
 define( 'IDCRM_DEALS_PATH', plugin_dir_path( __FILE__ ) );
