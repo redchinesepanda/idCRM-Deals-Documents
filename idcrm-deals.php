@@ -5,27 +5,7 @@
  * @package           idcrm-deals-documents
  *
  * @wordpress-plugin
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
- * Plugin Name:       id:СRM Deals & Documents
-=======
- * Plugin Name:       id:СRM Deals! & Documents!!!
->>>>>>> develope
-=======
- * Plugin Name:       id:СRM Deals! & Documents!!!!
->>>>>>> develope
-=======
- * Plugin Name:       id:СRM Deals! & Documents!!!!!
->>>>>>> develope
-=======
- * Plugin Name:       id:СRM Deals! & Documents!!!!!!
->>>>>>> develope
-=======
- * Plugin Name:       id:СRM Deals! & Documents!!!!!!!!
->>>>>>> develope
+ * Plugin Name:       id:СRM Deals! & Documents!!!!!!!!!
  * Description:       id:CRM module for deals and documents.
  * Version:           1.0.0
  * Author:            id:Result
