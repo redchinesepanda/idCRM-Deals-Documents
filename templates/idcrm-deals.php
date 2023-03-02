@@ -11,22 +11,22 @@
 
 namespace idcrmdeals\templates;
 
-require_once('lib/idCRMProDashboard.php');
+// require_once('lib/idCRMProDashboard.php');
 // require_once('lib/idCRMProProduct.php');
 // require_once('lib/idCRMProMail.php');
 // require_once('lib/idCRMProComments.php');
 
-use idcrmpro\templates\lib\idCRMProDashboard;
+// use idcrmpro\templates\lib\idCRMProDashboard;
 // use idcrmpro\templates\lib\idCRMProProduct;
 // use idcrmpro\templates\lib\idCRMProMail;
 // use idcrmpro\templates\lib\idCRMProComments;
-use idcrmpro\idCRMPro;
+// use idcrmpro\idCRMPro;
 
-$event_today = idCRMProDashboard::get_day_events('today');
+// $event_today = idCRMProDashboard::get_day_events('today');
 
-$event_tomorrow = idCRMProDashboard::get_day_events('tomorrow');
+// $event_tomorrow = idCRMProDashboard::get_day_events('tomorrow');
 
-$_template_file_events = idCRMPro::IDCRMPRO_PATH . '/templates/template-parts/crm-dashboard-event-loop.php';
+// $_template_file_events = idCRMPro::IDCRMPRO_PATH . '/templates/template-parts/crm-dashboard-event-loop.php';
 
 // $statistics_data = idCRMProProduct::product();
 
@@ -61,7 +61,7 @@ require_once( 'template-parts/sidebar.php' );
 						<div class="message-box scrollable">
 							<div class="message-widget message-scroll">
 								<?php
-									load_template( $_template_file_events, false, $event_today );
+									// load_template( $_template_file_events, false, $event_today );
 								?>
 							</div>
 						</div>
