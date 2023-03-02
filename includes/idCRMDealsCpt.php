@@ -1,12 +1,4 @@
 <?php
-/**
- * @package   Id_CRM_Contacts_Company_Cpt
- * @author    id:Result
- * @link      https://idresult.ru
- * @copyright Vladimir Shlykov
- * @license   GPL-2.0-or-later
- * @version   1.0.0
- */
 
 namespace idcrmdeals\includes;
 
@@ -88,7 +80,7 @@ class idCRMDealsCpt
 	
 			flush_rewrite_rules();
 
-			echo '<pre>' . print_r( $message, true ) . '</pre>';
+			// echo '<pre>' . print_r( $message, true ) . '</pre>';
 		}
 	}
 

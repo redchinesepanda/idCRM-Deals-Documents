@@ -2,6 +2,8 @@
 
 namespace idcrmdeals\includes;
 
+require_once ('idCRMDealsRoles.php');
+
 /**
  * Fired during plugin activation.
  *
@@ -20,6 +22,8 @@ class idCRMDealsActivator
 		do_action( 'idcrmpro_pages' );
 		
 		flush_rewrite_rules();
+
+		idCRMDealsRoles::activate();
 	}
 
 	public static function create_pages()
