@@ -50,6 +50,8 @@ class idCRMDeals
 
 	public static function register()
 	{
+		register_activation_hook( __FILE__, [ '\idcrmdeals\includes\idCRMDealsCpt', 'activate' ] );
+
 		register_activation_hook( __FILE__, [ '\idcrmdeals\includes\idCRMDealsActivator', 'activate' ] );
 
 		register_activation_hook( __FILE__, [ '\idcrmdeals\includes\idCRMDealsDeactivator', 'deactivate' ] );

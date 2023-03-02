@@ -17,19 +17,13 @@ class idCRMDealsActivator
 	{
 		self::create_pages();
 
-		// require idCRM Contacts & Companies activated
-
 		do_action( 'idcrmpro_pages' );
 		
 		flush_rewrite_rules();
-
-		// wp_die( 'idCRMDealsActivator::activate end' );
 	}
 
 	public static function create_pages()
 	{
-		// require idCRM Contacts & Companies activated
-
 		add_filter( 'idcrm_pages', function ( $pages ) {
 			return [
 				'idcrm-deals' => [
