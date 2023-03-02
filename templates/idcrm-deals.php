@@ -185,7 +185,7 @@ require_once( 'template-parts/sidebar.php' );
 			// load_template( $_template_file_statistics, false, $statistics_data );
 		?>
 	</div>
-		<?php require 'inc/footer.php'; ?>
+		<?php require_once( 'template-parts/footer.php' ); ?>
 		<?php wp_footer(); ?>
 	</body>
 </html>
