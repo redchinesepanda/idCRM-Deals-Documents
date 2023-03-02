@@ -51,7 +51,7 @@ class idCRMDealsRoles
         
         self::add_cap_deal_status( $roles );
 
-        wp_die( '<pre>idCRMDealsRoles::add_cap $roles: ' . print_r( $roles, true ) . '</pre>' ); 
+        // wp_die( '<pre>idCRMDealsRoles::add_cap $roles: ' . print_r( $roles, true ) . '</pre>' ); 
     }
 
 }
