@@ -23,7 +23,7 @@ class idCRMDealsActivator
 		
 		flush_rewrite_rules();
 
-		wp_die( 'idCRMDealsActivator::activate end' );
+		// wp_die( 'idCRMDealsActivator::activate end' );
 	}
 
 	public static function create_pages()
