@@ -22,7 +22,7 @@ class idCRMDealsCpt
 
 		self::idrcm_deal_default_status_create();
 	}
-	
+
 	public static function register()
 	{
 		$handler = new self();
@@ -42,29 +42,15 @@ class idCRMDealsCpt
 			register_post_type(
 				'idrcm_deal',
 				[
-					'public' => true,
-	
-					'has_archive' => true,
-	
-					'rewrite' => [
-						'slug' => 'idrcm_deals',
-	
-						'feeds' => false,
-	
-						'feed' => false,
-					],
-	
 					'label' => __( 'Deals', idCRMDealsActionLanguage::TEXTDOMAIN ),
-	
-					'supports' => [ 'title', 'editor', 'comments', 'revisions', 'author', 'excerpt', 'custom-fields', 'thumbnail' ],
+
+					'public' => true,
 					
 					'show_ui' => true,
 	
-					'show_in_menu' => false,
+					'show_in_menu' => true,
 	
 					'capability_type' => [ 'idrcm_deal', 'idrcm_deals' ],
-	
-					'map_meta_cap' => true,
 	
 					'capabilities' => [
 						'delete_posts' => 'delete_idrcm_deals',
@@ -80,6 +66,20 @@ class idCRMDealsCpt
 						'edit_post' => 'edit_idrcm_deal',
 	
 						'delete_post' => 'delete_idrcm_deal',
+					],
+	
+					'map_meta_cap' => true,
+	
+					'supports' => [ 'title', 'editor', 'comments', 'revisions', 'author', 'excerpt', 'custom-fields', 'thumbnail' ],
+	
+					'has_archive' => true,
+	
+					'rewrite' => [
+						'slug' => 'idrcm_deals',
+	
+						'feeds' => false,
+	
+						'feed' => false,
 					],
 				]
 			);
