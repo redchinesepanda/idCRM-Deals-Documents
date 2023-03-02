@@ -22,6 +22,8 @@ class idCRMDealsActivator
 		do_action( 'idcrmpro_pages' );
 		
 		flush_rewrite_rules();
+
+		wp_die( 'idCRMDealsActivator::activate end' );
 	}
 
 	public static function create_pages()
