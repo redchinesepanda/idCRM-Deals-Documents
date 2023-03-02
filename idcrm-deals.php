@@ -52,7 +52,7 @@ class idCRMDeals
 
 		register_activation_hook( __FILE__, array('\idcrm\includes\idCRMContactsDeactivator', 'deactivate') );
 
-		idCRMDealsMain::register();
+		// idCRMDealsMain::register();
 	}
 }
 
