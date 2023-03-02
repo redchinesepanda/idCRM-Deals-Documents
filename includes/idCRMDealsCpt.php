@@ -38,8 +38,10 @@ class idCRMDealsCpt
 
 	public static function idrcm_deal_custom_post_type()
 	{
+		$message['function'] = 'idrcm_deal_custom_post_type';
+
 		if ( !post_type_exists( 'idrcm_deal' ) ) {
-			register_post_type(
+			$message['register_post_type'] = register_post_type(
 				'idrcm_deal',
 				[
 					'label' => __( 'Deals', idCRMDealsActionLanguage::TEXTDOMAIN ),
@@ -48,7 +50,7 @@ class idCRMDealsCpt
 					
 					'show_ui' => true,
 	
-					'show_in_menu' => true,
+					'show_in_menu' => false,
 	
 					'capability_type' => [ 'idrcm_deal', 'idrcm_deals' ],
 	
@@ -85,6 +87,8 @@ class idCRMDealsCpt
 			);
 	
 			flush_rewrite_rules();
+
+			echo '<pre>' . print_r( $message, true ) . '</pre>';
 		}
 	}
 
