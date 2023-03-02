@@ -16,7 +16,7 @@
  * Domain Path:       /languages
  */
 
-namespace idcrmdeals; 
+namespace idcrmdeals;
 
 if ( ! defined( 'WPINC' ) ) {
 	die;
