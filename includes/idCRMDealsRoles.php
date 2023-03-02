@@ -48,6 +48,8 @@ class idCRMDealsRoles
         self::add_cap_deal( $roles );
         
         self::add_cap_deal_status( $roles );
+
+        echo 'idCRMDealsRoles::add_cap<br />'; 
     }
 
 }
