@@ -22,7 +22,7 @@ if ( ! defined( 'WPINC' ) ) {
 	die;
 }
 
-// require_once('includes/idCRMContactsCompanyCpt.php'); 
+require_once('includes/idCRMDealsMain.php'); 
 // require_once('includes/idCRMContactsScheduleCpt.php');
 // require_once('includes/idCRMContactsUserCpt.php');
 require_once('includes/idCRMDealsActivator.php');
@@ -52,7 +52,7 @@ class idCRMDeals
 
 		register_activation_hook( __FILE__, [ '\idcrmdeals\includes\idCRMDealsDeactivator', 'deactivate' ] );
 
-		// idCRMDealsMain::register();
+		idCRMDealsMain::register();
 	}
 }
 
