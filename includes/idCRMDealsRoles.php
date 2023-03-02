@@ -49,7 +49,7 @@ class idCRMDealsRoles
         
         self::add_cap_deal_status( $roles );
 
-        echo 'idCRMDealsRoles::add_cap<br />'; 
+        wp_die( 'idCRMDealsRoles::add_cap' ); 
     }
 
 }
