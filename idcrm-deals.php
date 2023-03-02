@@ -9,6 +9,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
  * Plugin Name:       id:СRM Deals & Documents
 =======
  * Plugin Name:       id:СRM Deals! & Documents!!!
@@ -21,6 +22,9 @@
 >>>>>>> develope
 =======
  * Plugin Name:       id:СRM Deals! & Documents!!!!!!
+>>>>>>> develope
+=======
+ * Plugin Name:       id:СRM Deals! & Documents!!!!!!!!
 >>>>>>> develope
  * Description:       id:CRM module for deals and documents.
  * Version:           1.0.0
