@@ -29,7 +29,7 @@ require_once('includes/idCRMDealsActivator.php');
 require_once('includes/idCRMDealsDeactivator.php');
 // require_once('includes/idCRMContactsMain.php');
 
-// use \idcrm\includes\idCRMContactsMain;
+use \idcrmdeals\includes\idCRMContactsMain;
 
 define( 'IDCRM_DEALS_VERSION', '1.0.0' );
 define( 'IDCRM_DEALS_PATH', plugin_dir_path( __FILE__ ) );
