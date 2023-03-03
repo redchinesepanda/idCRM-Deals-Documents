@@ -58,7 +58,7 @@ class idCRMDealsApiDeals
     
     public static function idcrmdeals_deals_list( $mode = 'direct' ) {
         $result['message']['fucntion'] = 'idcrmdeals_deals_list';
-        
+
         $result['mode'] = $mode;
 
         if ( array_key_exists( 'mode', $_GET ) ) {
@@ -71,9 +71,7 @@ class idCRMDealsApiDeals
             // check_ajax_referer( self::NONCE );
         }
 
-        if ( $result['post_id'] != 0 ) {
-            self::idcrmdeals_deals_list_render();
-        }
+        self::idcrmdeals_deals_list_render();
 
         if ($mode == 'ajax') {
             echo json_encode($result);
