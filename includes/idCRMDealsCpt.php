@@ -44,7 +44,7 @@ class idCRMDealsCpt
 	
 					// 'show_in_menu' => false,
 	
-					// 'capability_type' => [ 'idrcm_deal', 'idrcm_deals' ],
+					'capability_type' => [ 'idrcm_deal', 'idrcm_deals' ],
 	
 					// 'capabilities' => [
 					// 	'delete_posts' => 'delete_idrcm_deals',
