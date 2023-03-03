@@ -3,7 +3,7 @@ var idcrmdealsDealsApi = ( function($) {
 
     return {
         list: function () {
-            console.log( 'idcrmdealsDealsApi.list' );
+            // console.log( 'idcrmdealsDealsApi.list' );
 
             $.ajax( {
                 type: 'POST',
@@ -31,11 +31,9 @@ var idcrmdealsDealsApi = ( function($) {
                         }
                     }
 
-                    console.log( 'idcrmdealsDealsApi.list result: ' + result );
+                    // console.log( 'idcrmdealsDealsApi.list result: ' + result );
 
                     toastr.success( wp_ajax_toastr.strings.idcrmCommentSent );
-
-                    $('#comment-textarea').val('');
                 },
 
                 error: function( xhr ) {
