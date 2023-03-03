@@ -88,7 +88,7 @@ class idCRMDealsCpt
 	
 			flush_rewrite_rules();
 
-			// echo '<pre>' . print_r( $message, true ) . '</pre>';
+			echo '<pre>' . print_r( $message, true ) . '</pre>';
 		}
 	}
 
