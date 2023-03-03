@@ -5,6 +5,8 @@ var idcrmdealsDealsManage = ( function($) {
         list: function ()
         {
             idcrmdealsDealsApi.list();
+
+            console.log( 'idcrmdealsDealsManage.list' );
         }
     }
 } )( jQuery );
