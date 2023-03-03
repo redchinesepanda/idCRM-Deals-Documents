@@ -57,6 +57,8 @@ class idCRMDealsApiDeals
     }
     
     public static function idcrmdeals_deals_list( $mode = 'direct' ) {
+        $result['message']['fucntion'] = 'idcrmdeals_deals_list';
+        
         $result['mode'] = $mode;
 
         if ( array_key_exists( 'mode', $_GET ) ) {
@@ -75,7 +77,7 @@ class idCRMDealsApiDeals
 
         if ($mode == 'ajax') {
             echo json_encode($result);
-            
+
             die();
         }
     }
