@@ -4,7 +4,7 @@ var idcrmdealsDealsManage = ( function($) {
     return {
         list: function ()
         {
-            idcrmCommentApi.callAjaxSendComment( allData );
+            idcrmdealsDealsApi.list();
         }
     }
 } )( jQuery );
