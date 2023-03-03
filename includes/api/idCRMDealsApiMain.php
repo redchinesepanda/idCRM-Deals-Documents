@@ -21,7 +21,7 @@ class idCRMDealsApiMain
 
     public function register_script()
     {
-        wp_register_script( 'idcrmdeals_ajax_main', idCRM::$IDCRM_URL . 'public/js/api/idcrmdeals_ajax_main.js', [ 'jquery', 'toastr' ] );
+        wp_register_script( 'idcrmdeals_ajax_main', idCRMDeals::IDCRMDEALS_URL . 'public/js/api/idcrmdeals_ajax_main.js', [ 'jquery', 'toastr' ] );
 
         wp_localize_script( 'idcrmdeals_ajax_main', 'idcrmdeals_ajax_data', $this->get_data() );
 
