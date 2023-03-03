@@ -111,7 +111,7 @@ class idCRMDealsApiDeals
 
                     'post_date' => date_i18n('d.m.Y H:i', $post->post_date ),
 
-                    'post_icon' = 'note',
+                    'post_icon' => 'note',
                 ];
 			}
 		} else {
