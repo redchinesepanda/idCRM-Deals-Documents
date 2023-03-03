@@ -10,7 +10,7 @@ class idCRMDealsActionMenu
 	{
 		$handler = new self();
 
-		add_action( 'admin_menu', [ $handler, 'idcrm_submenu_page' ], 30 );
+		add_action( 'admin_menu', [ $handler, 'idrcm_deal_submenu_page' ], 30 );
 	}
 
 	public function idrcm_deal_submenu_page()
