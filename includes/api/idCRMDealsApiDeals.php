@@ -54,19 +54,17 @@ class idCRMDealsApiDeals
             self::idcrmdeals_deals_list_get() );
     }
     
-    public static function idcrmdeals_deals_list( $post_id = 0 ) {
-        $result['post_id'] = $post_id;
-        
-        $result['mode'] = 'direct';
+    public static function idcrmdeals_deals_list( $mode = 'direct' ) {
+        $result['mode'] = $mode;
 
-        if ( array_key_exists( 'post_id', $_POST ) ) {
-            $result['post_id'] = $_POST['post_id'];
-
-            $result['mode'] = 'ajax';
+        if ( array_key_exists( 'mode', $_GET ) ) {
+            if ( $_GET['mode'] == 'ajax' ) {
+                $result['mode'] = $_GET['mode'];
+            }
         }
 
         if ( $result['mode'] == 'ajax' ) {
-            check_ajax_referer( self::NONCE );
+            // check_ajax_referer( self::NONCE );
         }
 
         if ( $result['post_id'] != 0 ) {
@@ -74,8 +72,6 @@ class idCRMDealsApiDeals
         }
 
         if ($mode == 'ajax') {
-            echo json_encode($result);
-
             die();
         }
     }
