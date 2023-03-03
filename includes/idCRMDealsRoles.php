@@ -14,13 +14,30 @@ class idCRMDealsRoles
     public static function add_cap_deal( $roles )
     {
         foreach ( $roles as $role ) {
+            $role->add_cap( 'create_idrcm_deals' );
+
+            $role->add_cap( 'read_idrcm_deals' );
+
+            $role->add_cap( 'read_private_idrcm_deals' );
+
+            $role->add_cap( 'edit_idrcm_deals' );
+
+            $role->add_cap( 'edit_others_idrcm_deals' );
+            
+            $role->add_cap( 'edit_published_idrcm_deals' );
+            
+            $role->add_cap( 'publish_idrcm_deals' );
+
             $role->add_cap( 'delete_idrcm_deals' );
-            
-            $role->add_cap( 'read_idrcm_deal' );
-            
-            $role->add_cap( 'edit_idrcm_deal' );
-            
-            $role->add_cap( 'delete_idrcm_deal' );
+
+            // $role_admin->add_cap( 'create_companies' );
+            // $role_admin->add_cap( 'read_companies' );
+            // $role_admin->add_cap( 'read_private_companies' );
+            // $role_admin->add_cap( 'edit_companies' );
+            // $role_admin->add_cap( 'edit_others_companies' );
+            // $role_admin->add_cap( 'edit_published_companies' );
+            // $role_admin->add_cap( 'publish_companies' );
+            // $role_admin->add_cap( 'delete_companies' );
         }
     }
 
