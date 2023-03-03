@@ -34,7 +34,7 @@ require_once( 'template-parts/sidebar.php' );
 			<div class="col-lg-4">
 				<div class="card">
 					<div class="card-body">
-						<h4 class="card-title"><?php esc_html_e( 'Today Events', 'idcrmpro-contacts-companies' ); ?></h4>
+						<h4 class="card-title"><?php esc_html_e( 'Today Deals', 'idcrmpro-contacts-companies' ); ?></h4>
 						<div class="message-box scrollable">
 							<div id="<?php echo idCRMDealsApiDeals::ACTION ?>" class="message-widget message-scroll">
 								<?php
@@ -46,7 +46,7 @@ require_once( 'template-parts/sidebar.php' );
 				</div>
 				<div class="card">
 					<div class="card-body">
-						<h4 class="card-title"><?php esc_html_e( 'Tomorrow Events', 'idcrmpro-contacts-companies' ); ?></h4>
+						<h4 class="card-title"><?php esc_html_e( 'Tomorrow Deals', 'idcrmpro-contacts-companies' ); ?></h4>
 						<div class="message-box scrollable">
 							<div class="message-widget message-scroll">
 								<?php
@@ -62,7 +62,7 @@ require_once( 'template-parts/sidebar.php' );
 					<div class="card-body">
 						<div id="calendar" class="dashboard-calendar">
 							<div class="no-content"><div>
-								<?php echo esc_html__( 'There are no Events in Calendar', 'idcrmpro-contacts-companies' ); ?>
+								<?php echo esc_html__( 'There are no Documents', 'idcrmpro-contacts-companies' ); ?>
 							</div></div>
 						</div>
 						<!-- BEGIN MODAL -->
