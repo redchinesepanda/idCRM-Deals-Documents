@@ -11,6 +11,8 @@ class idCRMDealsActionMenu
 		$handler = new self();
 
 		add_action( 'admin_menu', [ $handler, 'idrcm_deal_submenu_page' ], 40 );
+		
+		add_action( 'admin_menu', [ $handler, 'idrcm_deal_status_submenu_page' ], 45 );
 	}
 
 	public function idrcm_deal_submenu_page()
@@ -29,6 +31,42 @@ class idCRMDealsActionMenu
 			false,
 
 			100
+		);
+
+		
+		add_submenu_page(
+			'idcrm-contacts',
+
+			esc_html__( 'Add Deal', idCRMDealsActionLanguage::TEXTDOMAIN ),
+
+			esc_html__( 'Add Deal', idCRMDealsActionLanguage::TEXTDOMAIN ),
+
+			'edit_user_contacts',
+
+			'post-new.php?post_type=idrcm_deal',
+
+			false,
+
+			105
+		);
+	}
+
+	public function idrcm_deal_status_submenu_page()
+	{
+		add_submenu_page(
+			'idcrm-contacts',
+
+			esc_html__( 'Deal Statuses', idCRMDealsActionLanguage::TEXTDOMAIN ),
+
+			esc_html__( 'Deal Statuses', idCRMDealsActionLanguage::TEXTDOMAIN ),
+
+			'edit_user_contacts',
+
+			'edit-tags.php?taxonomy=idrcm_deal_status',
+
+			false,
+
+			110
 		);
 	}
 }
