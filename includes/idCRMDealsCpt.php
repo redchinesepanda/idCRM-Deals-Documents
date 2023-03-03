@@ -44,9 +44,9 @@ class idCRMDealsCpt
 					
 					'show_ui' => true,
 
-					// 'show_in_menu' => 'edit.php?post_type=user_contact',
+					'show_in_menu' => 'edit.php?post_type=user_contact',
 
-					'show_in_menu' => 'edit.php?post_type=page',
+					// 'show_in_menu' => 'edit.php?post_type=page',
 					
 					// 'show_in_menu' => 'options-general.php',
 	
@@ -88,7 +88,7 @@ class idCRMDealsCpt
 	
 			flush_rewrite_rules();
 
-			echo '<pre>' . print_r( $message, true ) . '</pre>';
+			// echo '<pre>' . print_r( $message, true ) . '</pre>';
 		}
 	}
 
