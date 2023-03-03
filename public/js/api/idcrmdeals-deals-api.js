@@ -26,8 +26,10 @@ var idcrmdealsDealsApi = ( function($) {
                             result = JSON.stringify( JSON.parse( data ) );
                         } catch( e ) {
                             result = data;
-
-                            $( '#' + idcrmdeals_ajax_data.ajax_url ).html( data )
+                            
+                            let selector = '#' + idcrmdeals_ajax_data.ajax_url;
+                            
+                            $( selector ).html( data )
                         }
                     }
 
