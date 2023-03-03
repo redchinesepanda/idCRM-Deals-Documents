@@ -46,6 +46,7 @@ class idCRMDealsApiDeals
     }
 
     public static function idcrmdeals_deals_list_render () {
+        echo 'idcrmdeals_deals_list_render';
         load_template(
             idCRMDeals::IDCRMDEALS_PATH . 'templates/template-parts/idcrm-deals-loop-deals.php',
 
