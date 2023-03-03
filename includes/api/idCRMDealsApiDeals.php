@@ -86,7 +86,7 @@ class idCRMDealsApiDeals
 
                     'post_content' => $post->post_content,
 
-                    'post_thumbnail' => idCRMDeals::IDCRMDEALS_URL . 'templates/images/no-user.jpg',
+                    'post_thumbnail' => idCRMDeals::IDCRMDEALS_URL . 'public/img/no-user.jpg',
 
                     'post_date' => date_i18n('d.m.Y H:i', $post->post_date ),
 
