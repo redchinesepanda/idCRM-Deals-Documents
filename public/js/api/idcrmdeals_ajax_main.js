@@ -1,9 +1,7 @@
-var idcrmdealsAjaxMain = (function($) {
-    "use strict";
-    
-    return {
-        idcrmdealsAjaxMainGlobal1: 'idcrmdealsAjaxMainGlobal1',
+(function( $ ) {
+	'use strict';
 
-        idcrmdealsAjaxMainGlobal2: 'idcrmdealsAjaxMainGlobal2'
-    }
+	$(document).ready(function () {
+		idcrmdealsDealsManage.list();
+	});
 })( jQuery );
