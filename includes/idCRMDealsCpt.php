@@ -44,15 +44,9 @@ class idCRMDealsCpt
 					
 					'show_ui' => true,
 
-					// 'show_in_menu' => 'edit.php?post_type=user_contact',
-
 					'show_in_menu' => 'idcrm-contacts',
 
-					// 'show_in_menu' => 'edit.php?post_type=page',
-					
-					// 'show_in_menu' => 'options-general.php',
-	
-					// 'show_in_menu' => false,
+					'menu_position' => 100,
 	
 					'capability_type' => [ 'idrcm_deal', 'idrcm_deals' ],
 	
