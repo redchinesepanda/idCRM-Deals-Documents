@@ -42,39 +42,39 @@ class idCRMDealsCpt
 					
 					'show_ui' => true,
 	
-					'show_in_menu' => true,
+					// 'show_in_menu' => false,
 	
-					'capability_type' => [ 'idrcm_deal', 'idrcm_deals' ],
+					// 'capability_type' => [ 'idrcm_deal', 'idrcm_deals' ],
 	
-					'capabilities' => [
-						'delete_posts' => 'delete_idrcm_deals',
+					// 'capabilities' => [
+					// 	'delete_posts' => 'delete_idrcm_deals',
 	
-						'delete_published_posts' => 'delete_idrcm_deals',
+					// 	'delete_published_posts' => 'delete_idrcm_deals',
 	
-						'delete_private_posts' => 'delete_idrcm_deals',
+					// 	'delete_private_posts' => 'delete_idrcm_deals',
 	
-						'delete_others_posts' => 'delete_idrcm_deals',
+					// 	'delete_others_posts' => 'delete_idrcm_deals',
 	
-						'read_post' => 'read_idrcm_deal',
+					// 	'read_post' => 'read_idrcm_deal',
 	
-						'edit_post' => 'edit_idrcm_deal',
+					// 	'edit_post' => 'edit_idrcm_deal',
 	
-						'delete_post' => 'delete_idrcm_deal',
-					],
+					// 	'delete_post' => 'delete_idrcm_deal',
+					// ],
 	
-					'map_meta_cap' => true,
+					// 'map_meta_cap' => true,
 	
-					'supports' => [ 'title', 'editor', 'comments', 'revisions', 'author', 'excerpt', 'custom-fields', 'thumbnail' ],
+					// 'supports' => [ 'title', 'editor', 'comments', 'revisions', 'author', 'excerpt', 'custom-fields', 'thumbnail' ],
 	
-					'has_archive' => true,
+					// 'has_archive' => true,
 	
-					'rewrite' => [
-						'slug' => 'idrcm_deals',
+					// 'rewrite' => [
+					// 	'slug' => 'idrcm-deals',
 	
-						'feeds' => false,
+					// 	'feeds' => false,
 	
-						'feed' => false,
-					],
+					// 	'feed' => false,
+					// ],
 				]
 			);
 	
