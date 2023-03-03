@@ -42,7 +42,7 @@ class idCRMDealsCpt
 					
 					'show_ui' => true,
 	
-					// 'show_in_menu' => false,
+					'show_in_menu' => false,
 	
 					// 'capability_type' => [ 'idrcm_deal', 'idrcm_deals' ],
 	
