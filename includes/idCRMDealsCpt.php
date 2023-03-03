@@ -66,7 +66,7 @@ class idCRMDealsCpt
 	
 					// 'map_meta_cap' => true,
 	
-					// 'supports' => [ 'title', 'editor', 'comments', 'revisions', 'author', 'excerpt', 'custom-fields', 'thumbnail' ],
+					'supports' => [ 'title', 'editor', 'comments', 'revisions', 'author', 'excerpt', 'custom-fields', 'thumbnail' ],
 	
 					// 'has_archive' => true,
 	
