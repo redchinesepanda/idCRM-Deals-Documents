@@ -27,9 +27,7 @@ var idcrmdealsDealsApi = ( function($) {
                         } catch( e ) {
                             result = data;
                             
-                            let selector = '#' + idcrmdeals_ajax_data.ajax_url;
-                            
-                            $( selector ).html( data )
+                            $( '#' + idcrmdeals_deals_ajax_data.action ).html( data )
                         }
                     }
 
