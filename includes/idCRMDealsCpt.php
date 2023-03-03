@@ -42,9 +42,9 @@ class idCRMDealsCpt
 					
 					'show_ui' => true,
 
-					// 'show_in_menu' => 'edit.php?post_type=user_contact',
+					'show_in_menu' => 'edit.php?post_type=user_contact',
 					
-					'show_in_menu' => 'options-general.php',
+					// 'show_in_menu' => 'options-general.php',
 	
 					// 'show_in_menu' => false,
 	
