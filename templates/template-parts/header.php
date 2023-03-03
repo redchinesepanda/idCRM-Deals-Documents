@@ -233,7 +233,7 @@ use idcrmdeals\idCRMDeals;
 								$current_user = wp_get_current_user();
 
 								$user_profile_img      = get_user_meta( $current_user->ID, 'userimg', true );
-								$default_profile_image = plugins_url( 'images/no-user.jpg', __DIR__ );
+								$default_profile_image = idCRMDeals::IDCRMDEALS_URL . 'public/img/no-user.jpg';
 							?>
 							<li class="nav-item dropdown">
 								<a
