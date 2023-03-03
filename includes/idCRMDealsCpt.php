@@ -44,7 +44,9 @@ class idCRMDealsCpt
 					
 					'show_ui' => true,
 
-					'show_in_menu' => 'idcrm-contacts',
+					// 'show_in_menu' => 'idcrm-contacts',
+					
+					'show_in_menu' => false,
 
 					'menu_position' => 100,
 	
