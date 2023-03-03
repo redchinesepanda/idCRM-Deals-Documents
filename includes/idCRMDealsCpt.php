@@ -68,15 +68,15 @@ class idCRMDealsCpt
 	
 					'supports' => [ 'title', 'editor', 'comments', 'revisions', 'author', 'excerpt', 'custom-fields', 'thumbnail' ],
 	
-					// 'has_archive' => true,
+					'has_archive' => true,
 	
-					// 'rewrite' => [
-					// 	'slug' => 'idrcm-deals',
+					'rewrite' => [
+						'slug' => 'idrcm-deals',
 	
-					// 	'feeds' => false,
+						'feeds' => false,
 	
-					// 	'feed' => false,
-					// ],
+						'feed' => false,
+					],
 				]
 			);
 	
