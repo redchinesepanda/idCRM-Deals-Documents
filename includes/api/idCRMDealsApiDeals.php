@@ -58,27 +58,35 @@ class idCRMDealsApiDeals
     
     public static function idcrmdeals_deals_list( $mode = 'direct' ) {
         $result['message']['fucntion'] = 'idcrmdeals_deals_list';
+        
+        echo json_encode($result);
 
-        $result['mode'] = $mode;
-
-        if ( array_key_exists( 'mode', $_POST ) ) {
-            if ( $_POST['mode'] == 'ajax' ) {
-                $result['mode'] = $_POST['mode'];
-            }
-        }
-
-        if ( $result['mode'] == 'ajax' ) {
-            // check_ajax_referer( self::NONCE );
-        }
-
-        self::idcrmdeals_deals_list_render();
-
-        if ($mode == 'ajax') {
-            echo json_encode($result);
-
-            die();
-        }
+        die();
     }
+    
+    // public static function idcrmdeals_deals_list( $mode = 'direct' ) {
+    //     $result['message']['fucntion'] = 'idcrmdeals_deals_list';
+
+    //     $result['mode'] = $mode;
+
+    //     if ( array_key_exists( 'mode', $_POST ) ) {
+    //         if ( $_POST['mode'] == 'ajax' ) {
+    //             $result['mode'] = $_POST['mode'];
+    //         }
+    //     }
+
+    //     if ( $result['mode'] == 'ajax' ) {
+    //         // check_ajax_referer( self::NONCE );
+    //     }
+
+    //     self::idcrmdeals_deals_list_render();
+
+    //     if ($mode == 'ajax') {
+    //         echo json_encode($result);
+
+    //         die();
+    //     }
+    // }
 
     public static function idcrmdeals_deals_list_get()
 	{
