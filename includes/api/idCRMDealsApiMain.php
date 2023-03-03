@@ -14,7 +14,7 @@ class idCRMDealsApiMain
     {
         $handler = new self();
 
-        // add_action( 'wp_enqueue_scripts', [ $handler, 'register_script' ] );
+        add_action( 'wp_enqueue_scripts', [ $handler, 'register_script' ] );
 
         idCRMDealsApiDeals::register();
     }
