@@ -8,6 +8,8 @@ require_once('idCRMDealsCpt.php');
 
 require_once('actions/idCRMDealsActionMain.php');
 
+require_once('api/idCRMDealsApiMain.php');
+
 use \idcrmdeals\includes\actions\idCRMDealsActionMain;
 
 class idCRMDealsMain
@@ -19,6 +21,8 @@ class idCRMDealsMain
         idCRMDealsCpt::register();
 
         idCRMDealsActionMain::register();
+
+        idCRMDealsApiMain::register();
     }
 }
 
