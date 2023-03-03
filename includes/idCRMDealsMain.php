@@ -12,6 +12,8 @@ require_once('api/idCRMDealsApiMain.php');
 
 use \idcrmdeals\includes\actions\idCRMDealsActionMain;
 
+use \idcrmdeals\includes\api\idCRMDealsApiMain;
+
 class idCRMDealsMain
 {
     public static function register()
