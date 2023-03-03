@@ -44,7 +44,9 @@ class idCRMDealsCpt
 					
 					'show_ui' => true,
 
-					'show_in_menu' => 'edit.php?post_type=user_contact',
+					// 'show_in_menu' => 'edit.php?post_type=user_contact',
+
+					'show_in_menu' => 'idcrm-contacts',
 
 					// 'show_in_menu' => 'edit.php?post_type=page',
 					
