@@ -42,7 +42,7 @@ class idCRMDealsApiDeals
 
         add_action('wp_ajax_nopriv_' . self::ACTION, [ $handler, 'idcrmdeals_deals_list' ] );
 
-        add_action('wp_enqueue_scripts', [ $handler, 'register_script' ] );
+        // add_action('wp_enqueue_scripts', [ $handler, 'register_script' ] );
     }
 
     public static function idcrmdeals_deals_list_render () {
@@ -52,7 +52,8 @@ class idCRMDealsApiDeals
 
             false,
 
-            self::idcrmdeals_deals_list_get() );
+            self::idcrmdeals_deals_list_get()
+        );
     }
     
     public static function idcrmdeals_deals_list( $mode = 'direct' ) {
