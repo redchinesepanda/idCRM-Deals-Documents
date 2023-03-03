@@ -74,6 +74,8 @@ class idCRMDealsApiDeals
         }
 
         if ($mode == 'ajax') {
+            echo json_encode($result);
+            
             die();
         }
     }
