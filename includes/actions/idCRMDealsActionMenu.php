@@ -37,9 +37,9 @@ class idCRMDealsActionMenu
 		add_submenu_page(
 			'idcrm-contacts',
 
-			esc_html__( 'Add Deal', idCRMDealsActionLanguage::TEXTDOMAIN ),
+			__( 'Add Deal', idCRMDealsActionLanguage::TEXTDOMAIN ),
 
-			esc_html__( 'Add Deal', idCRMDealsActionLanguage::TEXTDOMAIN ),
+			__( 'Add Deal', idCRMDealsActionLanguage::TEXTDOMAIN ),
 
 			'edit_user_contacts',
 
@@ -56,9 +56,9 @@ class idCRMDealsActionMenu
 		add_submenu_page(
 			'idcrm-contacts',
 
-			esc_html__( 'Deal Statuses', idCRMDealsActionLanguage::TEXTDOMAIN ),
+			__( 'Deal Statuses', idCRMDealsActionLanguage::TEXTDOMAIN ),
 
-			esc_html__( 'Deal Statuses', idCRMDealsActionLanguage::TEXTDOMAIN ),
+			__( 'Deal Statuses', idCRMDealsActionLanguage::TEXTDOMAIN ),
 
 			'edit_user_contacts',
 

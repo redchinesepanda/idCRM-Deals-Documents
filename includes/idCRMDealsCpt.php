@@ -93,9 +93,9 @@ class idCRMDealsCpt
 	public static function idrcm_deal_custom_taxonomy()
 	{
 		$labels = [
-			'name' => __( 'Deal Statuses', 'taxonomy general name', idCRMDealsActionLanguage::TEXTDOMAIN ),
+			'name' => __( 'Deal Statuses', idCRMDealsActionLanguage::TEXTDOMAIN ),
 
-			'singular_name' => __( 'Deal Status', 'taxonomy singular name', idCRMDealsActionLanguage::TEXTDOMAIN ),
+			'singular_name' => __( 'Deal Status', idCRMDealsActionLanguage::TEXTDOMAIN ),
 
 			'search_items' => __( 'Search Deal Statuses', idCRMDealsActionLanguage::TEXTDOMAIN ),
 
