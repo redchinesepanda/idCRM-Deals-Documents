@@ -19,9 +19,9 @@ class idCRMDealsCpt
 	{
 		$handler = new self();
 
-		add_action( 'init', [ $handler, 'idrcm_deal_custom_post_type' ] );
+		add_action( 'init', [ $handler, 'idrcm_deal_custom_post_type' ], 20, 0 );
 
-		add_action( 'init', [ $handler, 'idrcm_deal_custom_taxonomy' ] );
+		add_action( 'init', [ $handler, 'idrcm_deal_custom_taxonomy' ], 20, 0 );
 
 		add_action( 'add_meta_boxes', [ $handler, 'idrcm_deal_metabox_add' ] );
 
