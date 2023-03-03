@@ -61,9 +61,9 @@ class idCRMDealsApiDeals
 
         $result['mode'] = $mode;
 
-        if ( array_key_exists( 'mode', $_GET ) ) {
-            if ( $_GET['mode'] == 'ajax' ) {
-                $result['mode'] = $_GET['mode'];
+        if ( array_key_exists( 'mode', $_POST ) ) {
+            if ( $_POST['mode'] == 'ajax' ) {
+                $result['mode'] = $_POST['mode'];
             }
         }
 
