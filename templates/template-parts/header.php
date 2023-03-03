@@ -1,3 +1,8 @@
+<?php
+
+use idcrmdeals\idCRMDeals;
+
+?>
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
@@ -130,7 +135,7 @@
 								<!-- Dark Logo icon -->
 								<?php
 								echo '<img
-									src="' . plugins_url( '../images/logo-icon.png', __FILE__ ) . '"
+									src="' . idCRMDeals::IDCRMDEALS_URL . 'public/img/logo-icon.png' . '"
 									alt="homepage"
 									class="dark-logo"
 								/>';
@@ -138,7 +143,7 @@
 								<!-- Light Logo icon -->
 								<?php
 								echo '<img
-									src="' . plugins_url( '../images/logo-light-icon.png', __FILE__ ) . '"
+									src="' . idCRMDeals::IDCRMDEALS_URL . 'public/img/logo-light-icon.png' . '"
 									alt="homepage"
 									class="light-logo"
 								/>';
@@ -150,7 +155,7 @@
 								<!-- dark Logo text -->
 								<?php
 								echo '<img
-									src="' . plugins_url( '../images/logo-text.png', __FILE__ ) . '"
+									src="' . idCRMDeals::IDCRMDEALS_URL . 'public/img/logo-text.png' . '"
 									alt="homepage"
 									class="dark-logo"
 								/>';
@@ -158,7 +163,7 @@
 								<!-- Light Logo text -->
 								<?php
 								echo '<img
-									src="' . plugins_url( '../images/logo-light-text.png', __FILE__ ) . '"
+									src="' . idCRMDeals::IDCRMDEALS_URL . 'public/img/logo-light-text.png' . '"
 									class="light-logo"
 									alt="homepage"
 								/>';
