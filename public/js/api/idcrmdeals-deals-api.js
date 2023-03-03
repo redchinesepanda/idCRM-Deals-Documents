@@ -3,6 +3,8 @@ var idcrmdealsDealsApi = ( function($) {
 
     return {
         list: function () {
+            console.log( 'idcrmdealsDealsApi.list' );
+
             $.ajax( {
                 type: 'POST',
 
@@ -43,18 +45,6 @@ var idcrmdealsDealsApi = ( function($) {
 
                     return;
                 }
-
-                // complete: function() {
-                //     console.log('idcrmdealsDealsApi.list complete callAjaxRefreshComments');
-
-                //     // idcrmCommentApi.callAjaxRefreshComments(allData.postId);
-
-                //     // $( '#send-comment-button' ).prop( "disabled", false );
-
-                //     if ( $( "#respond #ajax-loader" ) ) {
-                //         $( "#respond #ajax-loader" ).remove();
-                //     }
-                // }
             } );
         }
     }
