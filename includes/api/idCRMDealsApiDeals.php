@@ -84,7 +84,7 @@ class idCRMDealsApiDeals
         self::idcrmdeals_deals_list_render();
 
         if ($mode == 'ajax') {
-            echo json_encode($result);
+            // echo json_encode($result);
 
             die();
         }
