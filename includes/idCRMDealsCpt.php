@@ -44,27 +44,25 @@ class idCRMDealsCpt
 	
 					// 'show_in_menu' => false,
 	
-					// 'capability_type' => [ 'idrcm_deal', 'idrcm_deals' ],
-					
-					// 'capability_type' => [ 'post' ],
+					'capability_type' => [ 'idrcm_deal', 'idrcm_deals' ],
 	
-					// 'capabilities' => [
-					// 	'delete_posts' => 'delete_idrcm_deals',
+					'capabilities' => [
+						'delete_posts' => 'delete_idrcm_deals',
 	
-					// 	'delete_published_posts' => 'delete_idrcm_deals',
+						'delete_published_posts' => 'delete_idrcm_deals',
 	
-					// 	'delete_private_posts' => 'delete_idrcm_deals',
+						'delete_private_posts' => 'delete_idrcm_deals',
 	
-					// 	'delete_others_posts' => 'delete_idrcm_deals',
+						'delete_others_posts' => 'delete_idrcm_deals',
 	
-					// 	'read_post' => 'read_idrcm_deal',
+						'read_post' => 'read_idrcm_deal',
 	
-					// 	'edit_post' => 'edit_idrcm_deal',
+						'edit_post' => 'edit_idrcm_deal',
 	
-					// 	'delete_post' => 'delete_idrcm_deal',
-					// ],
+						'delete_post' => 'delete_idrcm_deal',
+					],
 	
-					// 'map_meta_cap' => true,
+					'map_meta_cap' => true,
 	
 					'supports' => [ 'title', 'editor', 'comments', 'revisions', 'author', 'excerpt', 'custom-fields', 'thumbnail' ],
 	
@@ -82,7 +80,7 @@ class idCRMDealsCpt
 	
 			flush_rewrite_rules();
 
-			echo '<pre>' . print_r( $message, true ) . '</pre>';
+			// echo '<pre>' . print_r( $message, true ) . '</pre>';
 		}
 	}
 
