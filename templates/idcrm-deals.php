@@ -13,37 +13,9 @@ namespace idcrmdeals\templates;
 
 use idcrmdeals\idCRMDeals;
 
-require_once(idCRMDeals::IDCRMDEALS_PATH . 'api/idCRMDealsApiDeals.php');
+require_once(idCRMDeals::IDCRMDEALS_PATH . 'includes/api/idCRMDealsApiDeals.php');
 
 use idcrmdeals\includes\api\idCRMDealsApiDeals;
-
-// require_once('lib/idCRMProProduct.php');
-// require_once('lib/idCRMProMail.php');
-// require_once('lib/idCRMProComments.php');
-
-// use idcrmpro\templates\lib\idCRMProDashboard;
-// use idcrmpro\templates\lib\idCRMProProduct;
-// use idcrmpro\templates\lib\idCRMProMail;
-// use idcrmpro\templates\lib\idCRMProComments;
-// use idcrmpro\idCRMPro;
-
-// $event_today = idCRMProDashboard::get_day_events('today');
-
-// $event_tomorrow = idCRMProDashboard::get_day_events('tomorrow');
-
-// $_template_file_events = idCRMPro::IDCRMPRO_PATH . '/templates/template-parts/crm-dashboard-event-loop.php';
-
-// $statistics_data = idCRMProProduct::product();
-
-// $_template_file_statistics = idCRMPro::IDCRMPRO_PATH . '/templates/template-parts/crm-dashboard-statistics.php';
-
-// $mail_data = idCRMProMail::mail();
-
-// $_template_file_mail = idCRMPro::IDCRMPRO_PATH . '/templates/template-parts/crm-dashboard-mail.php';
-
-// $comments_data = idCRMProComments::comments();
-
-// $_template_file_comments = idCRMPro::IDCRMPRO_PATH . '/templates/template-parts/crm-dashboard-comments.php';
 
 require_once( 'template-parts/check-user.php' );
 
