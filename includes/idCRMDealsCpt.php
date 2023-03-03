@@ -33,7 +33,9 @@ class idCRMDealsCpt
 		$message['function'] = 'idrcm_deal_custom_post_type';
 
 		if ( !post_type_exists( 'idrcm_deal' ) ) {
-			$message['register_post_type'] = register_post_type(
+			// $message['register_post_type'] = register_post_type(
+			
+			register_post_type(
 				'idrcm_deal',
 				[
 					'label' => __( 'Deals', idCRMDealsActionLanguage::TEXTDOMAIN ),
@@ -84,7 +86,7 @@ class idCRMDealsCpt
 	
 			flush_rewrite_rules();
 
-			// echo '<pre>' . print_r( $message, true ) . '</pre>';
+			echo '<pre>' . print_r( $message, true ) . '</pre>';
 		}
 	}
 
