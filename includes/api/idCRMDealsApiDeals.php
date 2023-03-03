@@ -20,12 +20,12 @@ class idCRMDealsApiDeals
         
         wp_register_script('idcrmdeals_ajax_deals_api', idCRMDeals::IDCRMDEALS_URL . 'public/js/api/idcrmdeals-deals-api.js', [ 'jquery' ] );
 
-        wp_localize_script( 'idcrmdeals_ajax_deals_api', 'idcrmdeals_deals_ajax_data', $this->get_ajax_data() );
+        wp_localize_script( 'idcrmdeals_ajax_deals_api', 'idcrmdeals_deals_ajax_data', $this->get_data() );
 
         wp_enqueue_script( 'idcrmdeals_ajax_deals_api' );
     }
 
-    private function get_ajax_data()
+    private function get_data()
     {
         return [
             'action' => self::ACTION,
@@ -42,7 +42,7 @@ class idCRMDealsApiDeals
 
         add_action('wp_ajax_nopriv_' . self::ACTION, [ $handler, 'idcrmdeals_deals_list' ] );
 
-        // add_action('wp_enqueue_scripts', [ $handler, 'register_script' ] );
+        add_action('wp_enqueue_scripts', [ $handler, 'register_script' ] );
     }
 
     public static function idcrmdeals_deals_list_render () {
@@ -55,36 +55,16 @@ class idCRMDealsApiDeals
         );
     }
     
-    // public static function idcrmdeals_deals_list( $mode = 'direct' ) {
-    //     header( 'Content-Type: application/json; charset=utf-8' );
-
-    //     $result['message']['fucntion'] = 'idcrmdeals_deals_list';
-
-    //     echo json_encode($result);
-
-    //     die();
-    // }
-    
     public static function idcrmdeals_deals_list() {
         $result['message']['fucntion'] = 'idcrmdeals_deals_list';
 
-        // $result['action'] = 'direct';
-
-        // if ( array_key_exists( 'action', $_POST ) ) {
-        //     $result['action'] = $_POST['action'];
-        // }
-
-        // if ( $result['action'] == self::ACTION ) {
-            // check_ajax_referer( self::NONCE );
-        // }
-
         self::idcrmdeals_deals_list_render();
 
-        // if ( $result['action'] == self::ACTION ) {
-            // echo json_encode($result);
+        // header( 'Content-Type: application/json; charset=utf-8' );
 
-            die();
-        // }
+        // echo json_encode($result);
+
+        die();
     }
 
     public static function idcrmdeals_deals_list_get()
