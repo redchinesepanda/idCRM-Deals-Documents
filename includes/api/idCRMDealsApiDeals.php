@@ -57,6 +57,8 @@ class idCRMDealsApiDeals
     }
     
     public static function idcrmdeals_deals_list( $mode = 'direct' ) {
+        header( 'Content-Type: application/json; charset=utf-8' );
+
         $result['message']['fucntion'] = 'idcrmdeals_deals_list';
 
         echo json_encode($result);
