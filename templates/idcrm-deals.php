@@ -11,7 +11,12 @@
 
 namespace idcrmdeals\templates;
 
-// require_once('lib/idCRMProDashboard.php');
+use idcrmdeals\idCRMDeals;
+
+require_once(idCRMDeals::IDCRMDEALS_PATH . 'api/idCRMDealsApiDeals.php');
+
+use idcrmdeals\includes\api\idCRMDealsApiDeals;
+
 // require_once('lib/idCRMProProduct.php');
 // require_once('lib/idCRMProMail.php');
 // require_once('lib/idCRMProComments.php');
@@ -59,7 +64,7 @@ require_once( 'template-parts/sidebar.php' );
 					<div class="card-body">
 						<h4 class="card-title"><?php esc_html_e( 'Today Events', 'idcrmpro-contacts-companies' ); ?></h4>
 						<div class="message-box scrollable">
-							<div class="message-widget message-scroll">
+							<div id="<?php echo idCRMDealsApiDeals::ACTION ?>" class="message-widget message-scroll">
 								<?php
 									// load_template( $_template_file_events, false, $event_today );
 								?>
